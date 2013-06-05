@@ -1,0 +1,29 @@
+<div class="container">
+  <h1>Create New Post</h1>
+  <br>
+  <div class="form_container">
+   
+    <form action="/posts" method="post">
+      <div id="drop_down">
+        <LABEL for="category">Select Category: </LABEL>
+        <select id = "list" name="post[category_id]">
+        <% @categories.each do |cat| %>
+          <option value= <%=cat.id%> > <%=cat.name%></option>
+        <%end%>
+        </select><br>
+      </div>
+      
+      <input type="text" name="post[name]" placeholder="name"><br>
+      
+      <input type="text" name="post[title]" placeholder="title"><br>
+
+      <textarea name="post[description]"cols="20" rows="10" placeholder="description..."></textarea><br>
+
+      <input type="text" name="post[price]" placeholder="price"><br>
+
+      <input class="button" type="submit" value="Post it!"><br>
+    </form>
+  </div>
+</div>
+
+

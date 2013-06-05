@@ -1,0 +1,165 @@
+body {
+  background-image: url('retina_wood.png');
+  background-repeat: repeat;
+}
+
+h1 {
+  width: 100%;
+  background-image: url('wall4.png');
+  text-align: center;
+  font-family: Francois One;
+  font-size: 50px;
+  margin: 15px 0px;
+  color: #222;
+}
+
+body > a{
+  color: black;
+  background-color: lightgray;
+  width: 50px;
+  font-size: 15px;
+  padding: 3px 10px;
+  margin: 5px;
+  height: 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-family: Francois One;
+}
+
+body a:hover{
+  background-color: #aaa;
+}
+
+nav li{
+  list-style-type: none;
+  display: inline;
+  float: right;
+}
+
+img{
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 10px;
+
+}
+
+.home_links{
+  width: 50%;
+  margin-left: 28%;
+}
+
+.home_links a {
+  padding: 40px;
+  float: left;
+  font-size: 30px;
+  text-decoration: none;
+  font-family: Francois One;
+  color: #222;
+  text-align: center;
+}
+
+
+.categories{
+  width: 500px;
+  margin: 20px auto;
+}
+
+.categories a {
+  font-size: 20px;
+  text-decoration: underline;
+  font-family: Francois One;
+  color: #222;
+}
+
+.categories a:hover {
+  color: #999;
+}
+
+nav li a{
+  color: black;
+  background: lightgray;
+  font-size: 12px;
+  padding: 5px 15px;
+  margin: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: Francois One;
+}
+
+nav li a:hover{
+  background-color: #aaa;
+}
+
+.form_container{
+  background-color: #edeff1;
+  width: 60%;
+  margin: 20px auto;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+.post_container{
+  margin: 40px auto;
+}
+
+#drop_down {
+  clear: both;
+  padding: 20px;
+  margin-left: 140px;
+  font-size: 20px;
+  font-family: Francois One;
+}
+
+form select{
+  margin-left: 100px;
+  width: 180px;
+}
+
+form textarea{
+  margin: 20px;
+  width: 300px;
+  margin-left: 200px;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+  box-shadow: 3px 3px 3px #888888;
+  padding-top: 10px;
+}
+
+.post_description{
+  width: 80%;
+  margin: 0px auto;
+}
+
+input {
+  height: 45px;
+  margin: 20px;
+  margin-left: 200px;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+  box-shadow: 3px 3px 3px #888888;
+}
+
+#post_category{
+  clear: both;
+  font-family: Francois One;
+  font-size: 30px;
+  padding: 10px;
+  padding-top: 30px;
+}
+
+.post{
+  font-family: Francois One;
+  font-size: 18px;
+  padding: 10px;
+}
+
+th {
+  text-align: left;
+}
+
+a {
+  display: block;
+}
+

@@ -1,0 +1,18 @@
+<nav>
+  <ul>
+    <li class = "modify"><a href="/posts/edit/<%=@post.security_key%>">Edit</a></li>
+    <li class = "modify"><a href="/posts/remove/<%=@post.id%>">delete</a></li>
+  </ul>
+<nav>
+
+<div class="post_container">
+  <h1><%=@post.title%></h1>
+</div>
+<div class="post_description">
+  <% @category = Category.find(@post.category_id) %>
+  <% p @category %>
+  <p id="post_category"> Category: <%= @category.name %> </p>
+  <p class ="post"> <%=@post.description %> </p>
+  <p class ="post"> Price: $<%=@post.price %> </p>
+</div>
+

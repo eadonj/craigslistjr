@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Edit Post: <%= @post.title %></h1>
+  <br>
+  <div class="form_container">
+
+      <form action="/posts/edit" method="post">
+      <input type="hidden" name ="id" value=<%=@post.id%>>
+      <input type="hidden" name ="key" value=<%=@post.security_key%>>
+      <input type="text" name="post[name]" value=<%=@post.name%>><br>
+      
+      <input type="text" name="post[title]" value=<%=@post.title%>><br>
+
+      <textarea name="post[description]"cols="20" rows="10"><%=@post.description%></textarea><br>
+
+      <input type="text" name="post[price]" value=<%=@post.price%>><br>
+
+      <input class="button" type="submit" value="Edit this diddy!"><br>
+    </form>
+  </div>
+</div>
+

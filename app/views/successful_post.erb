@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Post Successfully Made!</h1>
+
+  <p> Your secret key is: <%= @post.security_key %> </p>
+  <% value = @post.security_key%>
+
+  <a href="/posts/<%=@post.security_key%>">Here is a link to your post</a>
+  
+
+  

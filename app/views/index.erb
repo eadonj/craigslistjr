@@ -1,0 +1,19 @@
+<nav>
+  <ul>
+    <li> <a href="/posts/new">New Post</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <h1>Craigslisted</h1>
+
+  <div class="home_links">
+  <% if @categories %>
+    <% @categories.each do |cat| %>
+      <a href="/category/<%="#{cat.name}"%>"> <%= cat.name %> </a>
+    <% end %>
+  <% end %>
+ </div>
+</div>
+
+<!-- <img src="/css/lunch.jpg" alt="inspired" height="300px" width="300px"> -->

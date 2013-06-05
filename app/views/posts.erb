@@ -1,0 +1,15 @@
+<nav>
+  <ul>
+    <li> <a href="/posts/new">New Post</a></li>
+  </ul>
+</nav> 
+
+<h1><%= @category.name %></h1>
+<div class = "categories">
+<% @posts.each do |post| %>
+  <a class="post_link" href="/posts/<%=post.security_key%>" > Author: <%= post.name %> </a>
+   <p id="title"> <%= post.title %> |  Last Updated: <%= post.updated_at%></p>
+<% end %>
+</div>
+
+
